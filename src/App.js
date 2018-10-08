@@ -6,13 +6,13 @@ import User from './User/User';
 class App extends Component {
   render() {
     return (
-      <Router basename="/redux-user">
+      <Router>
         <div className="App">
           <div className="container">
             <div className="row">
               <div className="col-md-4">
-                <Route exact path="/" render={() => <h1>Please, enter login you would like to find into the search line</h1>} />
-                <Route path="/:login" render={(props) => <User {...props}/>} />
+                <Route exact path="/redux-user" render={() => <h1>Please, enter login you would like to find into the search line</h1>} />
+                <Route path="/redux-user/:login" render={(props) => <User {...props}/>} />
               </div>
             </div>
           </div>
