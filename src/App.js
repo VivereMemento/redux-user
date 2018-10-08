@@ -11,10 +11,7 @@ class App extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-4">
-                <Switch>
-                  <Route exact path="/redux-user" render={() => <h1>Please, enter login you would like to find into the search line</h1>} />
-                  <Route path="/redux-user/:login?" render={(props) => <User {...props}/>} />
-                </Switch>
+                <Route path="/redux-user/:login" render={(props) => <User {...props}/>} />
               </div>
             </div>
           </div>
