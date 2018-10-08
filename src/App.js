@@ -6,7 +6,7 @@ import User from './User/User';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/redux-user">
         <div className="App">
           <div className="container">
             <div className="row">
